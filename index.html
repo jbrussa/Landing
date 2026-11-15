@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="SoSafety: gestión de vulnerabilidades y concientización en ciberseguridad.">
+  <title>SoSafety · Gestión de vulnerabilidades</title>
+  <link rel="icon" href="assets/shield.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#inicio">
+      <img src="assets/shield.svg" alt="" width="28" height="28">
+      <span>SoSafety</span>
+    </a>
+    <nav>
+      <a href="#funciones">Funciones</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#inventario">Inventario demo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="tag">Ciberseguridad contextualizada</p>
+      <h1>Las vulnerabilidades que <span class="accent">sí</span> afectan a tu organización.</h1>
+      <p class="lead">SoSafety cruza tu inventario tecnológico con fuentes públicas de CVE, prioriza cada riesgo con un Business Score y te ayuda a concientizar a tu equipo.</p>
+      <div class="cta">
+        <a class="btn primary" href="#inventario">Ver inventario demo</a>
+        <a class="btn ghost" href="#como">Cómo funciona</a>
+      </div>
+    </section>
+
+    <section id="funciones" class="section">
+      <h2>Funciones principales</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Inventario de activos</h3>
+          <p>Registrá activos y tecnologías manualmente o importalas desde archivos de dependencias y repositorios.</p>
+        </article>
+        <article class="card">
+          <h3>Búsqueda de amenazas</h3>
+          <p>Recopilación automática de CVE desde NVD, GitHub Advisory y CVE, filtradas por tu stack.</p>
+        </article>
+        <article class="card">
+          <h3>Business Score</h3>
+          <p>Priorizá combinando la severidad técnica (CVSS) con la criticidad del activo afectado.</p>
+        </article>
+        <article class="card">
+          <h3>Recomendaciones con IA</h3>
+          <p>Sugerencias de mitigación y campañas de concientización adaptadas a cada vulnerabilidad.</p>
+        </article>
+        <article class="card">
+          <h3>Campañas</h3>
+          <p>Formularios, role plays, tutoriales y simulaciones de phishing con resultados en tiempo real.</p>
+        </article>
+        <article class="card">
+          <h3>Portal del empleado</h3>
+          <p>Cada usuario ve y resuelve las campañas que tiene asignadas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="como" class="section">
+      <h2>Cómo funciona</h2>
+      <ol class="steps">
+        <li><strong>Conectá</strong> tu repositorio o subí tu archivo de dependencias.</li>
+        <li><strong>Escaneamos</strong> las tecnologías y sus versiones.</li>
+        <li><strong>Correlacionamos</strong> con vulnerabilidades publicadas.</li>
+        <li><strong>Priorizás</strong> con el Business Score y actuás.</li>
+      </ol>
+    </section>
+
+    <section id="inventario" class="section">
+      <h2>Inventario de la demo</h2>
+      <p class="muted">Tecnologías declaradas en este repositorio (<code>package.json</code> y <code>requirements.txt</code>). Escanealo con SoSafety para ver qué vulnerabilidades las afectan.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tecnología</th><th>Versión</th><th>Tipo</th></tr>
+          </thead>
+          <tbody id="inventory-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>SoSafety · UTN FRC · Proyecto Final 2026 · Grupo 19</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
