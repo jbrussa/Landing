@@ -8,10 +8,9 @@ Están en `package.json` (sección `dependencies`) y en `requirements.txt`:
 
 | Tecnología | Versión |
 | --- | --- |
-| TRENDnet TEW-657BRM | 1.00.1 |
-| D-Link DIR-600L | 2.17 |
-| sigoden dufs | 0.1 |
-| izhaorui Zr.Admin.NET | e6ceaf47548f1a485f3ba3f4c139905e90fee0a2 |
+| Linux Foundation Magma | 1.0 |
+| Unknown WPGraphQL | 0 |
+| Apache Software Foundation Apache Shiro | 0 |
 
 > Son tecnologías de demostración: no son paquetes npm/pip instalables, así que **no ejecutes `npm install` ni `pip install -r requirements.txt`**. El sitio no necesita dependencias.
 
